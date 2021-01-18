@@ -1,0 +1,19 @@
+{
+  "name": "my_cv",
+  "version": "1.0.0",
+  "description": "https://lyolya95.github.io/rsschool-cv/cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyolya95/rsschool-cv.git"
+  },
+  "author": "Lyolya Bugrova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyolya95/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/lyolya95/rsschool-cv#readme"
+}

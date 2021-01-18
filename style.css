@@ -1,0 +1,109 @@
+body {
+    background: #373737;
+    color: #f4f4f4;
+}
+
+.header {
+    margin-bottom: 10px;
+    background: url("./resource/images/background_header.jpg") center no-repeat darkslategrey;
+    background-blend-mode: screen;
+    background-size: cover;
+    height: 40vh;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__title {
+    padding: 10px;
+    font-size: 50px;
+    border: 1px solid gray;
+}
+
+.header__position {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main__item1 {
+   background: repeating-linear-gradient(-54deg, #d3d3d3 0, #d3d3d3 0, transparent 1px, transparent 15px);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    align-items: center;
+    border: 1px solid gray;
+    width: 30%;
+    min-width: 22%;
+}
+
+.main__item1>img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.main__item1>span {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.main__item2 {
+   width: 100%;
+    border: 1px solid;
+    margin-right: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    background: #111;
+}
+
+.main__item2__title {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main__item2__title>span {
+    position: relative;
+}
+
+.main__item2__title>span:before {
+    display: block;
+    width:1200px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #f4f4f4;
+    top:50%;
+    right: 110px;
+}
+
+.main__item2__title>span:after {
+    display: block;
+    width:1200px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #f4f4f4;
+    top:50%;
+    left: 110px;
+}
+
+.item2__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item2__content>p {
+    margin-left: 20px;
+}
