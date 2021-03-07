@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>My cv</title>
@@ -97,16 +96,15 @@
             </div>
             <div class="item2__content">
                 <i class="fab fa-js-square" style="font-size: 2rem"></i>
-                <code>
-                    <pre>function check(str, bracketsConfig) {
+                <pre><code>function check(str, bracketsConfig) {
     let array = bracketsConfig.flat();
     let newArray = [];
     const lengthStr = str.length;
-    for (let i = 0; i < bracketsConfig.flat().length / 2; i++) {
+    for (let i = 0; i &lt; bracketsConfig.flat().length / 2; i++) {
         newArray.push(array.splice(0, 2).join(''))
     }
 
-    for (let i = 0; i < lengthStr + 1; i++) {
+    for (let i = 0; i &lt; lengthStr + 1; i++) {
         while (str.includes(newArray[i])) {
             str = str.replace(newArray[i], '');
         }
@@ -114,8 +112,8 @@
     }
 
     return !str;
-}</pre>
-                </code>
+}</code>
+                </pre>
             </div>
         </div>
     </main>
