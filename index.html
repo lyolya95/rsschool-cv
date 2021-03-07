@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>My cv</title>
@@ -20,16 +20,19 @@
     </header>
     <main class="main">
         <section class="main__item1">
+            <h3>My bio</h3>
             <img src="resource/images/avatar.jpg" alt="photo"/>
             <span>Name: Bugrova Olga Alexandrovna</span>
             <span>Date-of-birth: 23-aug-1995</span>
             <span>Nationality: Russian</span>
-            <div class="main__item1__icons">
-                <a href="https://github.com/lyolya95" ><i class="fab fa-github" style="font-size: 2rem; color: #f4f4f4"></i></a>
-                <a href="https://t.me/lyolya_dev"><i class="fab fa-telegram" style="font-size: 2rem; color: #f4f4f4"></i></a>
-            </div>
+            <nav>
+                <ul class="main__item1__icons">
+                    <li><a href="https://github.com/lyolya95" ><i class="fab fa-github" style="font-size: 2rem; color: #f4f4f4"></i></a></li>
+                    <li><a href="https://t.me/lyolya_dev"><i class="fab fa-telegram" style="font-size: 2rem; color: #f4f4f4"></i></a></li>
+                </ul>
+            </nav>
         </section>
-        <section class="main__item2">
+        <div class="main__item2">
             <div class="main__item2__title">
                 <span>About me</span>
             </div>
@@ -42,25 +45,87 @@
             </div>
             <div class="item2__content">
                 <i class="fas fa-hand-peace" style="font-size: 2rem"></i>
-                <p>music | read the books | walk | sleep | eat</p>
+                <ul>
+                    <li>music</li>
+                    <li>|</li>
+                    <li>read the books</li>
+                    <li>|</li>
+                    <li>walk</li>
+                    <li>|</li>
+                    <li>sleep</li>
+                    <li>|</li>
+                    <li>eat</li>
+                </ul>
             </div>
             <div class="main__item2__title">
                 <span>Skills</span>
             </div>
             <div class="item2__content">
                 <i class="fas fa-code" style="font-size: 2rem"></i>
-                <p>react | node js | vanilla js | redux</p>
+                <ul>
+                    <li>react</li>
+                    <li>|</li>
+                    <li>node js</li>
+                    <li>|</li>
+                    <li>vanilla js</li>
+                    <li>|</li>
+                    <li>redux</li>
+                </ul>
+            </div>
+            <div class="main__item2__title">
+                <span>Education</span>
+            </div>
+            <div class="item2__content">
+                <i class="fas fa-graduation-cap" style="font-size: 2rem"></i>
+                <ul>
+                    <li>Samara State Social and Pedagogical University</li>
+                </ul>
             </div>
             <div class="main__item2__title">
                 <span>English</span>
             </div>
             <div class="item2__content">
                 <i class="fas fa-level-up-alt" style="font-size: 2rem"></i>
-                <p>A2+ | B1-</p>
+                <ul>
+                    <li>A2+</li>
+                    <li>|</li>
+                    <li>B1-</li>
+                </ul>
             </div>
-        </section>
+            <div class="main__item2__title">
+                <span>Code</span>
+            </div>
+            <div class="item2__content">
+                <i class="fab fa-js-square" style="font-size: 2rem"></i>
+                <code>
+                    <pre>function check(str, bracketsConfig) {
+    let array = bracketsConfig.flat();
+    let newArray = [];
+    const lengthStr = str.length;
+    for (let i = 0; i < bracketsConfig.flat().length / 2; i++) {
+        newArray.push(array.splice(0, 2).join(''))
+    }
+
+    for (let i = 0; i < lengthStr + 1; i++) {
+        while (str.includes(newArray[i])) {
+            str = str.replace(newArray[i], '');
+        }
+        newArray.push(newArray[i])
+    }
+
+    return !str;
+}</pre>
+                </code>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/lyolya95" ><i class="fab fa-github" style="font-size: 2rem; color: #f4f4f4"></i></a>
+            <h5>2021</h5>
+            <a href="https://rs.school/js/"><img src="resource/images/rs_school_logo.svg" width="80" height="80" alt="logo"></a>
+        </div>
+    </footer>
 </div>
 
 </body>
