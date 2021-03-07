@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>My cv</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+    <header class="header">
+        <span class="header__title">Bugrova Lyolya</span>
+        <span class="header__position">Software engineer</span>
+    </header>
+    <main class="main">
+        <section class="main__item1">
+            <h3>My bio</h3>
+            <img src="resource/images/avatar.jpg" alt="photo"/>
+            <span>Name: Bugrova Olga Alexandrovna</span>
+            <span>Date-of-birth: 23-aug-1995</span>
+            <span>Nationality: Russian</span>
+            <nav>
+                <ul class="main__item1__icons">
+                    <li><a href="https://github.com/lyolya95" ><i class="fab fa-github" style="font-size: 2rem; color: #f4f4f4"></i></a></li>
+                    <li><a href="https://t.me/lyolya_dev"><i class="fab fa-telegram" style="font-size: 2rem; color: #f4f4f4"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="main__item2">
+            <div class="main__item2__title">
+                <span>About me</span>
+            </div>
+            <div class="item2__content">
+                <i class="far fa-edit" style="font-size: 2rem"></i>
+                <p>I work as a software engineer at the IT2G company. I want to impruve my scills and more. Every days i learn English and watch the IT-channels.  Bachelor of Applied Informatics, more course rs-school, udemy, stepic and much more.</p>
+            </div>
+                <div class="main__item2__title">
+                <span>Hobbies</span>
+            </div>
+            <div class="item2__content">
+                <i class="fas fa-hand-peace" style="font-size: 2rem"></i>
+                <ul>
+                    <li>music</li>
+                    <li>|</li>
+                    <li>read the books</li>
+                    <li>|</li>
+                    <li>walk</li>
+                    <li>|</li>
+                    <li>sleep</li>
+                    <li>|</li>
+                    <li>eat</li>
+                </ul>
+            </div>
+            <div class="main__item2__title">
+                <span>Skills</span>
+            </div>
+            <div class="item2__content">
+                <i class="fas fa-code" style="font-size: 2rem"></i>
+                <ul>
+                    <li>react</li>
+                    <li>|</li>
+                    <li>node js</li>
+                    <li>|</li>
+                    <li>vanilla js</li>
+                    <li>|</li>
+                    <li>redux</li>
+                </ul>
+            </div>
+            <div class="main__item2__title">
+                <span>Education</span>
+            </div>
+            <div class="item2__content">
+                <i class="fas fa-graduation-cap" style="font-size: 2rem"></i>
+                <ul>
+                    <li>Samara State Social and Pedagogical University</li>
+                </ul>
+            </div>
+            <div class="main__item2__title">
+                <span>English</span>
+            </div>
+            <div class="item2__content">
+                <i class="fas fa-level-up-alt" style="font-size: 2rem"></i>
+                <ul>
+                    <li>A2+</li>
+                    <li>|</li>
+                    <li>B1-</li>
+                </ul>
+            </div>
+            <div class="main__item2__title">
+                <span>Code</span>
+            </div>
+            <div class="item2__content">
+                <i class="fab fa-js-square" style="font-size: 2rem"></i>
+                <pre><code>function check(str, bracketsConfig) {
+    let array = bracketsConfig.flat();
+    let newArray = [];
+    const lengthStr = str.length;
+    for (let i = 0; i &lt; bracketsConfig.flat().length / 2; i++) {
+        newArray.push(array.splice(0, 2).join(''))
+    }
+
+    for (let i = 0; i &lt; lengthStr + 1; i++) {
+        while (str.includes(newArray[i])) {
+            str = str.replace(newArray[i], '');
+        }
+        newArray.push(newArray[i])
+    }
+
+    return !str;
+}</code>
+                </pre>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/lyolya95" ><i class="fab fa-github" style="font-size: 2rem; color: #f4f4f4"></i></a>
+            <h5>2021</h5>
+            <a href="https://rs.school/js/"><img src="resource/images/rs_school_logo.svg" width="80" height="80" alt="logo"></a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
